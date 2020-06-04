@@ -1,0 +1,8 @@
+{
+  "name": "GitHubActionsTest",
+  "version": "0.0.1",
+  "description": "GitHub Actions Test",
+  "main": "index.js",
+  "author": "Maeda Naoki",
+  "license": "MIT"
+}
