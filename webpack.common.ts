@@ -30,3 +30,5 @@ export const commonConfig: Configuration = {
     filename: "[name].js",
   },
 };
+
+console.log(commonConfig);
