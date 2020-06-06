@@ -1,4 +1,4 @@
-import { ActionKey } from "authentication/Key";
+import { ActionKey } from "authentication/key";
 
 class ActionTest {
   showActionKey() {
