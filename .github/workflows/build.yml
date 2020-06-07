@@ -40,6 +40,10 @@ jobs:
       with:
         cmd: build
 
+    - name: Zip artifact
+      run: |
+        zip Extension.zip dist
+
     - name: Yarn start
       uses: borales/actions-yarn@v2.0.0
       with:
