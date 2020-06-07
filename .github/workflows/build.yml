@@ -43,7 +43,7 @@ jobs:
     - name: Zip artifact
       run: |
         pwd
-        zip Extension.zip ./dist
+        zip -r dist/Extension.zip dist
 
     - name: Upload math result for job 1
       uses: actions/upload-artifact@v2
