@@ -44,6 +44,12 @@ jobs:
       run: |
         zip Extension.zip dist
 
+    - name: Upload math result for job 1
+      uses: actions/upload-artifact@v2
+      with:
+        name: Extension
+        path: dist/Extension.zip
+
     - name: Yarn start
       uses: borales/actions-yarn@v2.0.0
       with:
