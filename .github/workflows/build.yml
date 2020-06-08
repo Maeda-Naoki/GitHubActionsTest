@@ -27,18 +27,14 @@ jobs:
       with:
         node-version: 12.x
 
-    - name: Yarn install
-      uses: borales/actions-yarn@v2.0.0
-      with:
-        cmd: install
-
     - name: Yarn build
-      uses: borales/actions-yarn@v2.0.0
       env:
         PROJECT_ID: ${{ secrets.PROJECT_ID }}
         API_KEY: ${{ secrets.API_KEY }}
-      with:
-        cmd: build
+      run: |
+        yarn install
+        yarn build
+
 
     - name: Zip artifact
       run: |
@@ -54,6 +50,5 @@ jobs:
         path: dist/Extension.zip
 
     - name: Yarn start
-      uses: borales/actions-yarn@v2.0.0
-      with:
-        cmd: start
+      run: |
+        yarn start
