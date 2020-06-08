@@ -44,6 +44,7 @@ jobs:
       run: |
         pwd
         ls -al dist
+        cd dist
         zip -r dist/Extension.zip dist
 
     - name: Upload math result for job 1
